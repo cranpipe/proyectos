@@ -1,0 +1,259 @@
+ * {
+   margin: 0;
+   border: 0;
+   padding: 0;
+   font-family: 'Oswald', sans-serif;
+   scroll-behavior: smooth;
+ }
+
+ header {
+   background-image: url('../img/profile1.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: right;
+   margin-bottom: 5rem;
+   height: 30rem;
+ }
+
+ button.close {
+   background: #d73e4d;
+   background: rgba(215, 62, 77, 0.75);
+   border: 0 none !important;
+   color: black;
+   display: inline-block;
+   float: right;
+   font-size: 34px;
+   height: 120px;
+   line-height: 2;
+   margin: 0px 1px;
+   opacity: 1;
+   text-align: center;
+   text-shadow: none;
+   -webkit-transition: background 0.2s ease-in-out;
+   transition: background 0.2s ease-in-out;
+   vertical-align: middle;
+   width: 50px;
+ }
+
+ .modal-title {
+   text-align: center;
+   margin-left: 20px;
+ }
+
+ .linea1 {
+   display: block;
+   width: 200px;
+   margin-top: 1em;
+   margin-bottom: 0.4em;
+   margin-left: auto;
+   margin-right: auto;
+   border-style: inset;
+   border-width: 1px;
+ }
+
+ .linea2 {
+   display: inline-block;
+   width: 1110px;
+   margin-top: 0.4em;
+   margin-bottom: 0.4em;
+   margin-left: auto;
+   margin-right: auto;
+   border-style: inset;
+   border-width: 1px;
+   text-align: center;
+ }
+
+ .linea3 {
+   display: inline-block;
+   width: 1110px;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   margin-left: auto;
+   margin-right: auto;
+   border-style: inset;
+   border-width: 1px;
+ }
+
+ .linea4 {
+   display: inline-block;
+   width: 1110px;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   margin-left: auto;
+   margin-right: auto;
+   border-style: inset;
+   border-width: 1px;
+ }
+
+ h1 {
+   display: block;
+   text-align: center;
+   /* margin: 50px 0px 100px 0; */
+   color: black;
+   font-size: 36pt;
+   font-weight: 700;
+   color: #373A3C;
+ }
+
+ h2 {
+   display: block;
+   text-align: center;
+   /* margin: 50px 0px 100px 0; */
+   color: black;
+   font-size: 32pt;
+   font-weight: 500;
+   color: #373A3C;
+   margin-top: 30px;
+ }
+
+ h5 {
+   display: block;
+   text-align: center;
+   /* margin: 50px 0px 100px 0; */
+   color: black;
+   font-size: 12pt;
+   font-weight: 500;
+   color: ##373A3C;
+   margin-top: 40px;
+ }
+
+ h6 {
+   display: block;
+   text-align: center;
+   font-size: 12pt;
+   font-weight: 500;
+   color: #FFFFFF;
+   margin-top: 40px;
+   background-color: #373A3C;
+   height: 50px;
+   padding-top: 5px;
+ }
+
+ .tarjeta1 img {
+   transform: rotate(180deg);
+ }
+
+ .card-group {
+   padding: 1rem;
+   grid-column-gap: 50px;
+   border: 2px black;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .card-title {
+   font-size: 16pt;
+   font-weight: 700;
+   text-align: center;
+   color: #373A3C;
+   margin-left: 0;
+   margin-right: 0;
+   text-align: center;
+ }
+
+ .card-text {
+   font-size: 12pt;
+   font-weight: 700;
+   text-align: center;
+   color: #373A3C;
+ }
+
+ div div div ul li {
+   margin-top: 80px;
+   text-align: justify;
+   margin-left: auto;
+   margin-right: auto;
+   list-style: none;
+ }
+
+ /* Oculta el carrusel de imágenes y cambia el width de las líneas cuando se ve en mobile devises */
+ @media only screen and (max-width: 576px) {
+   #blogCarousel {
+     display: none;
+   }
+
+   .linea4 {
+     display: none;
+   }
+
+   .linea2 {
+     width: 300px;
+   }
+
+   .linea3 {
+     width: 300px;
+   }
+
+   .linea4 {
+     width: 300px;
+   }
+ }
+
+ /* Atributos del carrusel de imágenes */
+ #blogCarousel {
+   column-gap: 10px;
+   margin-bottom: 60px;
+ }
+
+ .carousel-indicators li {
+   border: 0;
+   border-radius: 50%;
+   width: 13px;
+   height: 13px;
+   background-color: black;
+ }
+
+ .carousel-indicators {
+   margin-bottom: -3%;
+ }
+
+ .carousel-item img {
+   height: 200px;
+   width: auto;
+ }
+
+ /* Invierte las imágenes de las tarjetas para ser visualizadas correctamente */
+ div .image-5 {
+   transform: rotate(180deg);
+ }
+
+ div .image-6 {
+   transform: rotate(90deg);
+ }
+
+ div .image-7 {
+   transform: rotate(90deg);
+ }
+
+ div .image-8 {
+   transform: rotate(90deg);
+ }
+
+ .otrasfotos {
+   margin-bottom: 60px;
+ }
+
+ #rrss {
+   display: flex;
+   justify-content: center;
+ }
+
+ #rrss .flex-item {
+   display: flex;
+   flex-direction: row;
+   width: 90%;
+   height: 30%;
+   justify-content: space-around;
+   list-style: none;
+   margin-top: 20px;
+ }
+
+ .flex-item li i {
+   color: #373A3C;
+   margin-bottom: 1rem;
+ }
+
+ .copyright {
+   text-align: center;
+   padding-top: 10px;
+ }
