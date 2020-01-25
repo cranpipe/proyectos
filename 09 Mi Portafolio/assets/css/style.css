@@ -3,7 +3,7 @@
    border: 0;
    padding: 0;
    font-family: 'Oswald', sans-serif;
-   /* scroll-behavior: smooth; */
+   scroll-behavior: smooth;
  }
 
  header {
@@ -15,9 +15,30 @@
    height: 30rem;
  }
 
-.modal-title {
-  text-align: center;
-}
+ button.close {
+   background: #d73e4d;
+   background: rgba(215, 62, 77, 0.75);
+   border: 0 none !important;
+   color: black;
+   display: inline-block;
+   float: right;
+   font-size: 34px;
+   height: 120px;
+   line-height: 2;
+   margin: 0px 1px;
+   opacity: 1;
+   text-align: center;
+   text-shadow: none;
+   -webkit-transition: background 0.2s ease-in-out;
+   transition: background 0.2s ease-in-out;
+   vertical-align: middle;
+   width: 50px;
+ }
+
+ .modal-title {
+   text-align: center;
+   margin-left: 20px;
+ }
 
  .linea1 {
    display: block;
@@ -39,6 +60,7 @@
    margin-right: auto;
    border-style: inset;
    border-width: 1px;
+   text-align: center;
  }
 
  .linea3 {
@@ -93,21 +115,19 @@
    font-weight: 500;
    color: ##373A3C;
    margin-top: 40px;
+ }
 
-}
-
-h6 {
-  display: block;
-  text-align: center;
-  font-size: 12pt;
-  font-weight: 500;
-  color: #FFFFFF;
-  margin-top: 40px;
-  background-color: #373A3C;
-  height: 50px;
-  padding-top: 5px;
-}
-
+ h6 {
+   display: block;
+   text-align: center;
+   font-size: 12pt;
+   font-weight: 500;
+   color: #FFFFFF;
+   margin-top: 40px;
+   background-color: #373A3C;
+   height: 50px;
+   padding-top: 5px;
+ }
 
  .tarjeta1 img {
    transform: rotate(180deg);
@@ -146,83 +166,94 @@ h6 {
    list-style: none;
  }
 
- /* Oculta el carrusel de imágenes cuando se ve en mobile devises */
+ /* Oculta el carrusel de imágenes y cambia el width de las líneas cuando se ve en mobile devises */
  @media only screen and (max-width: 576px) {
    #blogCarousel {
      display: none;
    }
+
    .linea4 {
      display: none;
-     }
-}
-
-
-
-   /* Atributos del carrusel de imágenes */
-   #blogCarousel {
-     column-gap: 10px;
-     margin-bottom: 60px;
    }
 
-   .carousel-indicators li {
-     border: 0;
-     border-radius: 50%;
-     width: 13px;
-     height: 13px;
-     background-color: black;
+   .linea2 {
+     width: 300px;
    }
 
-   .carousel-indicators {
-     margin-bottom: -3%;
+   .linea3 {
+     width: 300px;
    }
 
-   .carousel-item img {
-     height: 200px;
-     width: auto;
+   .linea4 {
+     width: 300px;
    }
+ }
 
-   /* Invierte las imágenes de las tarjetas para ser visualizadas correctamente */
-   div .image-5 {
-     transform: rotate(180deg);
-   }
+ /* Atributos del carrusel de imágenes */
+ #blogCarousel {
+   column-gap: 10px;
+   margin-bottom: 60px;
+ }
 
-   div .image-6 {
-     transform: rotate(90deg);
-   }
+ .carousel-indicators li {
+   border: 0;
+   border-radius: 50%;
+   width: 13px;
+   height: 13px;
+   background-color: black;
+ }
 
-   div .image-7 {
-     transform: rotate(90deg);
-   }
+ .carousel-indicators {
+   margin-bottom: -3%;
+ }
 
-   div .image-8 {
-     transform: rotate(90deg);
-   }
+ .carousel-item img {
+   height: 200px;
+   width: auto;
+ }
 
-   .otrasfotos {
-     margin-bottom: 60px;
-   }
+ /* Invierte las imágenes de las tarjetas para ser visualizadas correctamente */
+ div .image-5 {
+   transform: rotate(180deg);
+ }
 
-   #rrss {
-     display: flex;
-     justify-content: center;
-   }
+ div .image-6 {
+   transform: rotate(90deg);
+ }
 
-   #rrss .flex-item {
-     display: flex;
-     flex-direction: row;
-     width: 90%;
-     height: 30%;
-     justify-content: space-around;
-     list-style: none;
-     margin-top: 30px;
-   }
+ div .image-7 {
+   transform: rotate(90deg);
+ }
 
-   .flex-item li i {
-     color: #373A3C;
-     margin-bottom: 2rem;
-   }
+ div .image-8 {
+   transform: rotate(90deg);
+ }
 
+ .otrasfotos {
+   margin-bottom: 60px;
+ }
 
-   .copyright {
-     text
-   }
+ #rrss {
+   display: flex;
+   justify-content: center;
+ }
+
+ #rrss .flex-item {
+   display: flex;
+   flex-direction: row;
+   width: 90%;
+   height: 30%;
+   justify-content: space-around;
+   list-style: none;
+   margin-top: 20px;
+ }
+
+ .flex-item li i {
+   color: #373A3C;
+   margin-bottom: 1rem;
+ }
+
+ .copyright {
+   text-align: center;
+   padding-top: 10px;
+ }

@@ -26,7 +26,7 @@ $(document).ready(function() {
         }
 
         if (this.hash == "#contacto") {
-          diferencial = 60;
+          diferencial = 13;
         }
         $("html, body").animate({
           scrollTop: $(gato).offset().top - diferencial
