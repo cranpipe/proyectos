@@ -15,6 +15,10 @@
    height: 30rem;
  }
 
+.modal-title {
+  text-align: center;
+}
+
  .linea1 {
    display: block;
    width: 200px;
@@ -37,7 +41,6 @@
    border-width: 1px;
  }
 
-
  .linea3 {
    display: inline-block;
    width: 1110px;
@@ -48,7 +51,6 @@
    border-style: inset;
    border-width: 1px;
  }
-
 
  .linea4 {
    display: inline-block;
@@ -82,7 +84,6 @@
    margin-top: 30px;
  }
 
-
  h5 {
    display: block;
    text-align: center;
@@ -90,16 +91,27 @@
    color: black;
    font-size: 12pt;
    font-weight: 500;
-   color: #373A3C;
-   margin-top: 30px;
- }
+   color: ##373A3C;
+   margin-top: 40px;
+
+}
+
+h6 {
+  display: block;
+  text-align: center;
+  font-size: 12pt;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-top: 40px;
+  background-color: #373A3C;
+  height: 50px;
+  padding-top: 5px;
+}
 
 
  .tarjeta1 img {
    transform: rotate(180deg);
-
  }
-
 
  .card-group {
    padding: 1rem;
@@ -108,7 +120,6 @@
    margin-left: auto;
    margin-right: auto;
  }
-
 
  .card-title {
    font-size: 16pt;
@@ -120,14 +131,12 @@
    text-align: center;
  }
 
-
  .card-text {
    font-size: 12pt;
    font-weight: 700;
    text-align: center;
    color: #373A3C;
  }
-
 
  div div div ul li {
    margin-top: 80px;
@@ -137,73 +146,83 @@
    list-style: none;
  }
 
-
-/* Oculta el carrusel de imágenes cuando se ve en mobile devises */
- @media only screen and (max-width: 575px) {
+ /* Oculta el carrusel de imágenes cuando se ve en mobile devises */
+ @media only screen and (max-width: 576px) {
    #blogCarousel {
      display: none;
    }
- }
-
-
- /* Atributos del carrusel de imágenes */
- #blogCarousel {
-   column-gap: 10px;
-   margin-bottom: 60px;
- }
-
- .carousel-indicators li {
-   border: 0;
-   border-radius: 50%;
-   width: 13px;
-   height: 13px;
-   background-color: black;
- }
-
-
- .carousel-indicators {
-   margin-bottom: -3%;
- }
-
-
- .carousel-item img {
-   height: 200px;
-   width: auto;
- }
-
-
-/* Invierte las imágenes de las tarjetas para ser visualizadas correctamente */
-div .image-5 {transform: rotate(180deg);}
-
-div .image-6 {transform: rotate(90deg);}
-
-div .image-7 {transform: rotate(90deg);}
-
-div .image-8 {transform: rotate(90deg);}
-
-
-.otrasfotos {
-margin-bottom: 60px;
+   .linea4 {
+     display: none;
+     }
 }
 
 
- #rrss {
-   display: flex;
-   justify-content: center;
- }
+
+   /* Atributos del carrusel de imágenes */
+   #blogCarousel {
+     column-gap: 10px;
+     margin-bottom: 60px;
+   }
+
+   .carousel-indicators li {
+     border: 0;
+     border-radius: 50%;
+     width: 13px;
+     height: 13px;
+     background-color: black;
+   }
+
+   .carousel-indicators {
+     margin-bottom: -3%;
+   }
+
+   .carousel-item img {
+     height: 200px;
+     width: auto;
+   }
+
+   /* Invierte las imágenes de las tarjetas para ser visualizadas correctamente */
+   div .image-5 {
+     transform: rotate(180deg);
+   }
+
+   div .image-6 {
+     transform: rotate(90deg);
+   }
+
+   div .image-7 {
+     transform: rotate(90deg);
+   }
+
+   div .image-8 {
+     transform: rotate(90deg);
+   }
+
+   .otrasfotos {
+     margin-bottom: 60px;
+   }
+
+   #rrss {
+     display: flex;
+     justify-content: center;
+   }
+
+   #rrss .flex-item {
+     display: flex;
+     flex-direction: row;
+     width: 90%;
+     height: 30%;
+     justify-content: space-around;
+     list-style: none;
+     margin-top: 30px;
+   }
+
+   .flex-item li i {
+     color: #373A3C;
+     margin-bottom: 2rem;
+   }
 
 
- #rrss .flex-item {
-   display: flex;
-   flex-direction: row;
-   width: 90%;
-   height: 30%;
-   justify-content: space-around;
-   list-style: none;
-   margin-top: 30px;
- }
-
-
- .flex-item li i {
-   color: #373A3C;
- }
+   .copyright {
+     text
+   }

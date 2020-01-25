@@ -17,16 +17,16 @@ $(document).ready(function() {
         var gato = this.hash;
         var diferencial = 0;
 
-        if (this.hash == "nombre1") {
-          diferencial = 50;
+        if (this.hash == "#aboutme") {
+          diferencial = 250;
         }
 
-        if (this.hash == "trabajos") {
+        if (this.hash == "#trabajos") {
           diferencial = 70;
         }
 
-        if (this.hash == "contactar") {
-          diferencial = 30;
+        if (this.hash == "#contacto") {
+          diferencial = 60;
         }
         $("html, body").animate({
           scrollTop: $(gato).offset().top - diferencial
